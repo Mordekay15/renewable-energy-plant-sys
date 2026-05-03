@@ -7,6 +7,11 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeParseException
 import scala.collection.mutable.ListBuffer
 
+// CSV input/output utilities for the Renewable Energy Plant System, including functions 
+// to read energy records from a CSV file, write records to a CSV file, and append records 
+// to an existing CSV file. The implementation includes error handling for malformed lines 
+// I/O issues, and uses a consistent format for timestamps and numeric values in the CSV output.
+  
 object CsvIO {
   def readAll(path: String): (List[EnergyRecord], List[String]) = {
     val file = new File(path)

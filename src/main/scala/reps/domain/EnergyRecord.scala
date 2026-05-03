@@ -3,6 +3,10 @@ package reps.domain
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
+// Domain model for the Renewable Energy Plant System, including energy sources, records, plant state, and time periods. 
+// It defines the core data structures and logic for representing energy production records, 
+//including methods for calculating utilisation and formatting for CSV output.
+
 final case class EnergyRecord(
     timestamp: LocalDateTime,
     source: EnergySource,

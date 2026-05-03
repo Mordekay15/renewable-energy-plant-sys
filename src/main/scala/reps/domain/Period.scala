@@ -1,5 +1,7 @@
 package reps.domain
 
+// Domain model for the Renewable Energy Plant System, including energy sources, records, plant state, and time periods.
+
 sealed trait Period { def label: String }
 
 object Period {

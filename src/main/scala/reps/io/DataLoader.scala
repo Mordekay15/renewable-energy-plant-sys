@@ -5,6 +5,11 @@ import reps.domain.{EnergyRecord, EnergySource, EquipmentStatus}
 import java.time.LocalDateTime
 import scala.util.Random
 
+// Data loading utilities for the Renewable Energy Plant System, including a function 
+// to synthesise energy records for a given number of days starting from a specified timestamp. 
+// The synthesised data includes realistic profiles for solar, wind, and hydro energy sources, 
+//as well as random variations in output and equipment status to simulate real-world conditions.
+
 object DataLoader {
   def synthesise(days: Int, start: LocalDateTime, seed: Long = 42L): List[EnergyRecord] = {
     val rng = new Random(seed)

@@ -2,6 +2,8 @@ package reps.domain
 
 import java.time.LocalDateTime
 
+// Domain model for the Renewable Energy Plant System, including energy sources, records, plant state, and time periods.
+
 sealed trait Severity { def label: String }
 object Severity {
   case object Info extends Severity { val label = "INFO" }

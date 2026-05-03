@@ -12,6 +12,8 @@ import java.time.{LocalDate, LocalDateTime}
 import scala.annotation.tailrec
 import scala.io.StdIn
 
+// Console-based user interface for the Renewable Energy Plant System
+
 final class ConsoleUI(dataPath: String) {
   private var records: List[EnergyRecord] = Nil
   private var plant:   PlantState         = PlantState.initial

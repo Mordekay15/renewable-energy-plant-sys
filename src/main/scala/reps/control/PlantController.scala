@@ -2,6 +2,8 @@ package reps.control
 
 import reps.domain._
 
+// Controller logic for the Renewable Energy Plant System, including plant state management, command handling, and recommendation generation based on recent energy records.
+
 object PlantController {
 
   final case class PlantState(

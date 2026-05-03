@@ -2,6 +2,8 @@ package reps.control
 
 import reps.domain._
 
+// Alert system for the Renewable Energy Plant System, defining rules for generating alerts based on energy records, and evaluating those rules against a list of records to produce actionable alerts for operators.
+
 object AlertSystem {
 
   type Rule = EnergyRecord => Option[Alert]

@@ -1,5 +1,7 @@
 package reps.analysis
 
+// Statistical analysis utilities for the Renewable Energy Plant System, including functions to calculate mean, median, mode, range, midrange, and a summary of statistics for a given sequence of numeric data. The implementation is designed to be generic and can work with any numeric type.
+
 object Statistics {
 
   final case class Summary(

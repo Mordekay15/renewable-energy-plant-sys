@@ -5,6 +5,10 @@ import reps.domain.{EnergyRecord, EnergySource, Period}
 import java.time.temporal.IsoFields
 import java.time.{LocalDate, LocalDateTime}
 
+// Filtering utilities for the Renewable Energy Plant System, providing functions to filter energy records by source, 
+// time range, period, and search terms, as well as sorting and grouping capabilities. These functions enable flexible 
+// querying of energy production data for analysis and reporting purposes.
+
 object Filters {
 
   def bySource(source: EnergySource)(records: List[EnergyRecord]): List[EnergyRecord] =

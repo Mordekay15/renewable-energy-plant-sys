@@ -3,6 +3,8 @@ package reps.ui
 import java.time.{LocalDate, LocalDateTime}
 import java.time.format.{DateTimeFormatter, DateTimeParseException}
 
+// Utility object for parsing user input into domain types, with error handling and user-friendly messages.
+
 object Parsers {
   val userDateFormatter: DateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
 
